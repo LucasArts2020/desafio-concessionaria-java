@@ -1,0 +1,19 @@
+body {
+    padding-top: 20px;
+}
+.card-header {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.btn-delete {
+    color: red;
+    cursor: pointer;
+}
+.btn-delete:hover {
+    color: #761119;
+}
+
+.container {
+    padding-bottom: 50px;
+}

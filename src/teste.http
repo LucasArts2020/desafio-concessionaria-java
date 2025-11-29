@@ -1,0 +1,38 @@
+### Cadastrar o primeiro carro
+POST http://localhost:8080/veiculos
+Authorization: Basic admin 123456
+Content-Type: application/json
+
+{
+  "marca": "Toyota",
+  "modelo": "Corolla XEi",
+  "ano": 2022,
+  "preco": 120000.00,
+  "descricao": "Carro muito novo, único dono",
+  "vendido": false
+}
+
+### Listar todos os carros
+GET http://localhost:8080/veiculos
+Authorization: Basic admin 123456
+
+
+
+
+### Atualizar o preço do carro 1 (PUT)
+PUT http://localhost:8080/veiculos/6
+Authorization: Basic admin 123456
+Content-Type: application/json
+
+{
+  "marca": "Toyota",
+  "modelo": "Corolla XEi",
+  "ano": 2022,
+  "preco": 115000.00,
+  "descricao": "Baixou o preço pra vender logo!",
+  "vendido": false
+}
+
+### Deletar o carro 1 (DELETE)
+DELETE http://localhost:8080/veiculos/6
+Authorization: Basic admin 123456

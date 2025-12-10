@@ -6,9 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface VeiculoRepository extends JpaRepository<Veiculo, Long> {
-    // Só isso! O JpaRepository já contém os métodos prontos:
-    // .save() -> Salva
-    // .findAll() -> Lista todos
-    // .findById() -> Busca um
-    // .delete() -> Apaga
+
 }
